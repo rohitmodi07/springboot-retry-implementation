@@ -13,21 +13,31 @@ include following dependency in build.gradle (gradle based) or pom.xml (maven ba
 gradle based dependency :---
 
 implementation 'org.springframework.boot:spring-boot-starter-aop'
+
 implementation 'org.springframework.retry:spring-retry'
 
 maven based dependency in pom.xml :---
 
 <dependency>
+    
     <groupId>org.springframework.retry</groupId>
+    
     <artifactId>spring-retry</artifactId>
+    
     <version>1.2.5.RELEASE</version>
+    
 </dependency>
 
 <dependency>
+    
     <groupId>org.springframework.boot</groupId>
+    
     <artifactId>spring-boot-starter-aop</artifactId>
+    
     <version>2.6.4.RELEASE</version>
+    
 </dependency>
+
 
 
 
