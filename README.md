@@ -6,7 +6,7 @@ This project gives an idea how to implement Retry logic in spring boot without h
 
 while implementing Retry logic we have to follow certain steps :---
 
-step 1 :-
+STEP 1 :---
 
 include following dependency in build.gradle (gradle based) or pom.xml (maven based)
 
@@ -31,7 +31,8 @@ maven based dependency in pom.xml :---
 
 
 
-step 2 :-
+STEP 2 :---
+
 
 class which has main method, along with @SpringBootApplication, we have to put another annotation @EnableRetry to enable retry functionality.
 then
