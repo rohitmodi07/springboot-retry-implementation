@@ -61,3 +61,14 @@ with @Recover doesnt execute, method which is annotated with @Retryable will exe
 Project Requirements
 
 JDK 1.11 or higher Gradle 7.3.2 or higher spring boot 2.5 or higher
+
+Note :- 
+
+In this project, i have intentionally used wrong api url so that call will fail and then control will go to recover method and try to fetch the data from another api url.
+
+We can relate this scenario in real time project where we call a database to fetch the details but at that time primary database is down and returned failure, after
+
+few attempt, request autometically forward to recover method and fetch the data from another database and return the result to user.
+
+This is one example i have mentioned, there are plenty of real time scenarios where we can avoid downtime or exception by implementing retry logic.
+
